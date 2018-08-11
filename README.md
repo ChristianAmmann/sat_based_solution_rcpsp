@@ -10,7 +10,7 @@ directly to SAT.
 [Click here for paper](https://drive.google.com/open?id=1L8KJMA1Wu-jNyBmYyrJmbcgckZhY9G-y) 
 
 
-###Project example with activities, relations and consumptions:
+### Project example with activities, relations and consumptions:
 
 ```sh
 project;0;2147483647;test
@@ -49,7 +49,7 @@ resource;10;8;Resource 10
 resource;4;8;Resource 4
 ```
 
-###Syntax:
+### Syntax:
 
 ```sh
 project;wat;wet;name
@@ -59,7 +59,7 @@ consumption;resource_id;capacity;consumtion
 resource;id;capacity;name 
 ```
 
-###Execution Example
+### Execution Example
 ```sh
 for m in "-bcc" "-pow"; 
 do 
@@ -70,7 +70,7 @@ do
 ;done
 ```
 
-###Measurements
+### Measurements
 <object data="https://drive.google.com/open?id=1Ao6MlmgN8UFhgQwMr1RTc67LRrrLUnr3" type="application/pdf" width="700px" height="700px">
     <embed src="https://drive.google.com/open?id=1Ao6MlmgN8UFhgQwMr1RTc67LRrrLUnr3">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/open?id=1Ao6MlmgN8UFhgQwMr1RTc67LRrrLUnr3">Download PDF</a>.</p>

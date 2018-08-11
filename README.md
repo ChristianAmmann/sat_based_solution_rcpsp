@@ -7,6 +7,82 @@ scheduling problems from industry indicate that it can be more efficient
 to encode the cardinality constraint for constant resource constraints
 directly to SAT.
 
-Paper: https://drive.google.com/open?id=1L8KJMA1Wu-jNyBmYyrJmbcgckZhY9G-y
+[Click here for paper](https://drive.google.com/open?id=1L8KJMA1Wu-jNyBmYyrJmbcgckZhY9G-y) 
+
+
+###Project example with activities, relations and consumptions:
+
+```sh
+project;0;2147483647;test
+task;0;308;Task 0
+task;1;10;Task 1
+task;2;1;Task 2
+task;3;20;Task 3
+task;4;2;Task 4
+task;5;5;Task 5
+task;6;1;Task 6
+aob;1;2;ea
+aob;2;3;ea
+aob;3;4;ea
+aob;4;5;ea
+aob;5;6;ea
+consumption;1;0;-3
+consumption;3;0;-3
+consumption;3;1;-3
+consumption;3;2;-3
+consumption;4;0;-3
+consumption;4;3;-3
+consumption;4;4;-3
+consumption;5;0;-3
+consumption;5;3;-3
+consumption;5;4;-3
+resource;0;8;Resource 0
+resource;5;8;Resource 5
+resource;6;8;Resource 6
+resource;7;8;Resource 7
+resource;1;8;Resource 1
+resource;2;8;Resource 2
+resource;8;8;Resource 8
+resource;3;8;Resource 3
+resource;9;8;Resource 9
+resource;10;8;Resource 10
+resource;4;8;Resource 4
+```
+
+###Syntax:
+
+```sh
+project;wat;wet;name
+task;id;duration;name
+aob;task_id_1;task_id_2;relation_type
+consumption;resource_id;capacity;consumtion
+resource;id;capacity;name 
+```
+
+###Execution Example
+```sh
+for m in "-bcc" "-pow"; 
+do 
+	for f in `find $DIR -name *.project`; 
+		do 
+			java -Xms12000M -Xmx20000M -jar scheduler.jar scheduler.Scheduler -algo rcpsp $m -logPath ".\evaluation_$m.log" -project $f
+		;done 
+;done
+```
+
+###Measurements
+<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/ChristianAmmann/sat_based_solution_rcpsp/tree/develop/common/images/memory_usage.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/ChristianAmmann/sat_based_solution_rcpsp/tree/develop/common/images/memory_usage.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/ChristianAmmann/sat_based_solution_rcpsp/tree/develop/common/images/sat_time.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/ChristianAmmann/sat_based_solution_rcpsp/tree/develop/common/images/sat_time.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+
 
 

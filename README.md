@@ -71,18 +71,15 @@ do
 ```
 
 ###Measurements
-<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/ChristianAmmann/sat_based_solution_rcpsp/tree/develop/common/images/memory_usage.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/ChristianAmmann/sat_based_solution_rcpsp/tree/develop/common/images/memory_usage.pdf">Download PDF</a>.</p>
+<object data="https://drive.google.com/open?id=1Ao6MlmgN8UFhgQwMr1RTc67LRrrLUnr3" type="application/pdf" width="700px" height="700px">
+    <embed src="https://drive.google.com/open?id=1Ao6MlmgN8UFhgQwMr1RTc67LRrrLUnr3">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/open?id=1Ao6MlmgN8UFhgQwMr1RTc67LRrrLUnr3">Download PDF</a>.</p>
     </embed>
 </object>
 
-<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/ChristianAmmann/sat_based_solution_rcpsp/tree/develop/common/images/sat_time.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/ChristianAmmann/sat_based_solution_rcpsp/tree/develop/common/images/sat_time.pdf">Download PDF</a>.</p>
+<object data="https://drive.google.com/open?id=1IlF0Yv4xcVLRfluBQfeg_c4lgYURsye2" type="application/pdf" width="700px" height="700px">
+    <embed src="https://drive.google.com/open?id=1IlF0Yv4xcVLRfluBQfeg_c4lgYURsye2">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/open?id=1IlF0Yv4xcVLRfluBQfeg_c4lgYURsye2">Download PDF</a>.</p>
     </embed>
 </object>
-
-
-
 

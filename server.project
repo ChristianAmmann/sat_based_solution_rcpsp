@@ -1,0 +1,6 @@
+project;0;999999;resource_conflict2
+task;1;2;anonymous;
+task;2;2;anonymous;
+resource;1;2;anonymous;
+consumption;1;1;-1;
+consumption;2;1;-2;
